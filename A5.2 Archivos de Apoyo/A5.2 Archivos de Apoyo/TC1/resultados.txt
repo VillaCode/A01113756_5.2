@@ -1,0 +1,3 @@
+Archivo de catálogo: TC1.ProductList.json
+Archivo de ventas: TC1.Sales.json
+Costo Total: 2481.86
