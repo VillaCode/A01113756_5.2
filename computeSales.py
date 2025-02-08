@@ -1,13 +1,14 @@
 import argparse
 import json
-import time 
+import time
+
 
 def main():
-    start_time = time.time() 
+    start_time = time.time()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("priceCatalogue", help="Archivo JSON del catálogo de precios")
-    parser.add_argument("salesRecord", help="Archivo JSON del registro de ventas")
+    parser.add_argument("priceCatalogue")
+    parser.add_argument("salesRecord")
     args = parser.parse_args()
 
     # Inicio variables por si hay error.
@@ -16,7 +17,11 @@ def main():
 
     # Abrir y cargar los archivos
     try:
-        with open(args.priceCatalogue, 'r', encoding='utf-8') as archivo_catalogo:
+        with open(
+            args.priceCatalogue,
+            'r',
+            encoding='utf-8'
+        ) as archivo_catalogo:
             catalogo = json.load(archivo_catalogo)
     except Exception as e:
         print(f"Error al cargar el catálogo: {e}")
@@ -50,13 +55,21 @@ def main():
 
     # Escribir los resultados
     try:
-        with open("resultados.txt", 'w', encoding='utf-8') as archivo_resultados:
+        with open(
+            "resultados.txt",
+            'w',
+            encoding='utf-8'
+        ) as archivo_resultados:
             archivo_resultados.write("RESULTADOS DE LA EJECUCIÓN\n")
             archivo_resultados.write("===========================\n")
-            archivo_resultados.write(f"Archivo de catálogo: {args.priceCatalogue}\n")
-            archivo_resultados.write(f"Archivo de ventas: {args.salesRecord}\n")
+            archivo_resultados.write(
+                f"Archivo de catálogo: {args.priceCatalogue}\n"
+            )
+            archivo_resultados.write(
+                f"Archivo de ventas: {args.salesRecord}\n")
             archivo_resultados.write(f"Costo Total: {costo_total}\n")
-            archivo_resultados.write(f"Tiempo de ejecución: {elapsed_time:.4f} segundos\n")
+            archivo_resultados.write(
+                f"Tiempo de ejecución: {elapsed_time:.4f} segundos\n")
     except Exception as e:
         print(f"Error al escribir el archivo de resultados: {e}")
 
@@ -67,6 +80,7 @@ def main():
     print(f"Archivo de ventas: {args.salesRecord}")
     print(f"Costo Total: {costo_total}")
     print(f"Tiempo de ejecución: {elapsed_time:.4f} segundos")
+
 
 if __name__ == "__main__":
     main()
