@@ -1,6 +1,0 @@
-RESULTADOS DE LA EJECUCIÓN
-===========================
-Archivo de catálogo: TC1.ProductList.json
-Archivo de ventas: TC1.Sales.json
-Costo Total: 0
-Tiempo de ejecución: 0.0156 segundos

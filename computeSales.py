@@ -56,8 +56,8 @@ def main():
     # Escribir los resultados
     try:
         with open(
-            "resultados.txt",
-            'w',
+            "SalesResults.txt",
+            'a',
             encoding='utf-8'
         ) as archivo_resultados:
             archivo_resultados.write("RESULTADOS DE LA EJECUCIÓN\n")

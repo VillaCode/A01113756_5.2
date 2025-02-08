@@ -1,6 +1,0 @@
-RESULTADOS DE LA EJECUCIÓN
-===========================
-Archivo de catálogo: TC1.ProductList.json
-Archivo de ventas: TC1.Sales.json
-Costo Total: 2481.8600000000006
-Tiempo de ejecución: 0.0156 segundos

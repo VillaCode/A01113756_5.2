@@ -1,0 +1,18 @@
+RESULTADOS DE LA EJECUCIÓN
+===========================
+Archivo de catálogo: TC1\TC1.ProductList.json
+Archivo de ventas: TC1\TC1.Sales.json
+Costo Total: 2481.8600000000006
+Tiempo de ejecución: 0.0000 segundos
+RESULTADOS DE LA EJECUCIÓN
+===========================
+Archivo de catálogo: TC1\TC1.ProductList.json
+Archivo de ventas: TC2\TC2.Sales.json
+Costo Total: 166568.22999999998
+Tiempo de ejecución: 0.0157 segundos
+RESULTADOS DE LA EJECUCIÓN
+===========================
+Archivo de catálogo: TC1\TC1.ProductList.json
+Archivo de ventas: TC3\TC3.Sales.json
+Costo Total: 165235.37
+Tiempo de ejecución: 0.0156 segundos
